@@ -1,0 +1,13 @@
+$color_dark: #263238;
+$color_medium_dark: #37474F;
+$color_medium: #546E7A;
+$color_light: #90A4AE;
+$color_very_light: #B0BEC5;
+$color_white: #ECEFF1;
+
+@import 'vendor/normalize';
+@import 'document';
+@import 'header';
+@import 'board';
+@import 'setup';
+@import 'footer';

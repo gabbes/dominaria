@@ -1,0 +1,18 @@
+.footer {
+  max-width: 288px;
+  margin: 0 auto;
+  margin-top: 32px;
+  padding: 0 8px;
+  font-size: 12px;
+  text-align: center;
+  color: $color_very_light;
+  border-top: 1px solid $color_white;
+
+  a {
+    color: $color_light;
+
+    &:hover {
+      color: $color_medium;
+    }
+  }
+}

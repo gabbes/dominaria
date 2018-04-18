@@ -1,0 +1,115 @@
+.setup {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(255,255,255,0.95);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23000000' fill-opacity='0.05' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
+}
+
+.setup__container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.setup__header {
+  text-align: right;
+}
+
+.setup__close {
+  display: inline-block;
+  width: 76px;
+  height: 66px;
+  margin: 8px;
+  padding: 0;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 100%;
+  border: none;
+  outline: none;
+  color: $color_medium;
+  background-color: transparent;
+
+  &:hover {
+    color: $color_dark;
+  }
+}
+
+.settings {
+  margin: 0 16px;
+  text-align: center;
+
+  h2 {
+    margin: 0;
+    margin-bottom: 8px;
+    color: $color_dark;
+  }
+}
+
+.options {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0;
+  margin-bottom: 16px;
+  padding: 0;
+  list-style: none;
+}
+
+.option__input {
+  display: none;
+}
+
+.option__label {
+  display: block;
+  min-width: 48px;
+  padding: 8px;
+  border-radius: 8px;
+  font-weight: 500;
+  text-align: center;
+  color: $color_medium;
+
+  &:hover {
+    color: $color_dark;
+  }
+}
+
+.option__input:checked + .option__label {
+  color: $color_white;
+  background-color: $color_dark;
+  background: linear-gradient($color_medium_dark, $color_dark);
+  box-shadow: 0 0 4px rgba($color_dark, 0.5);
+}
+
+.setup__submit {
+  display: block;
+  margin: 32px auto 0;
+  padding: 16px 32px;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 100px;
+  border: none;
+  outline: none;
+  color: $color_white;
+  background-color: $color_dark;
+  background: linear-gradient($color_medium_dark, $color_dark);
+  box-shadow: 0 0 8px rgba($color_dark, 0.5);
+
+  &:hover {
+    background: $color_dark;
+    box-shadow: 0 0 16px rgba($color_dark, 0.8);
+  }
+}
+
+.setup__submit--error {
+  opacity: 0.5;
+}
+
+.error {
+  margin: 16px 0 0;
+  font-size: 14px;
+  font-weight: 700;
+  text-align: center;
+  color: #DD2C00;
+}
